@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+.filtro {
+    display: none;
+}
+
+.producto {
+    flex: 1 1 250px; /* Ajusta el tamaño base de los elementos */
+    min-width: 200px; /* Asegura que los productos no se hagan demasiado pequeños */
+    max-width: 30px; /* Limita el ancho máximo */
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.i:focus::placeholder {
+    color: #e44;
+}
+.i:focus + .i2 path {
+    fill: #e44;
+}
+
+.i:focus + .i2 path {
+    fill: #e44;
+}
+
+.icon {
+    transition: background .5s, fill .5s;
+}
+
+.icon:hover {
+    background-color: #e44;
+}
+
+.icon:hover path {
+    fill: #fff
+}
+
+.fondo-obscuro {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.644);
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    display: none;
+    top: 0;
+}
+.fondo_apa {
+    animation: fondo_apa .4s ease-in;
+}
+@keyframes fondo_apa {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.fondo_des {
+    animation: fondo_des .4s ease-in;
+}
+@keyframes fondo_des {
+    0%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.mostrar {
+    animation: .5s ease forwards mov-ul
+}
+@keyframes mov-ul {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: -5%;
+    }
+}
+.ocultar {
+    animation: .5s ease forwards mov-ul-r
+}
+@keyframes mov-ul-r {
+    0% {
+        right: -5%;
+    }
+    100% {
+        right: -100%;
+    }
+}
+
+.input-form-c:focus, .textarea:focus {
+    border:1px solid #e44;
+}
+.input-form-c:focus::placeholder, .textarea:focus::placeholder {
+    color: #e44;
+}
+
+@media (max-width: 700px) {
+    .bars {
+        display: block;
+    }
+
+    .ull {
+        flex-direction: column;
+        position: fixed;
+        justify-content: start;
+        align-content: start;
+        top: 0;
+        right: -100%;
+        background-color: rgb(46, 12, 12);
+        height: 100vh;
+        width: 70%;
+        color: #fff;
+    }
+
+    .hola {
+        display: block;
+        padding: 30px;
+    }
+
+    .cont-bar {
+        display: block;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: start;
+    }
+
+    .x {
+        height: 30px;
+        width: 30px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .tt  {
+        font-size: 20px;
+    }
+}
